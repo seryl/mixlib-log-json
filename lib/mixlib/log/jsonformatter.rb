@@ -7,7 +7,7 @@ module Mixlib
     class JSONFormatter < Mixlib::Log::Formatter
 
       def call(severity, time, progname, msg)
-        jsonmsg = { s: severity }
+        jsonmsg = { s: severity.downcase }
         if @@show_time
           jsonmsg[:time] = time.iso8601()
         end

@@ -18,7 +18,7 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/seryl/mixlib-log-json"
   gem.license = "MIT"
   gem.summary = %Q{A general JSON logger for mixlib}
-  gem.description = %Q{A general JSON logger for mixlib}
+  gem.description = %Q{A general JSON logger for mixlib for ingestion by services like Logstash}
   gem.email = "joshtoft@gmail.com"
   gem.authors = ["Josh Toft"]
   gem.version = '0.0.3'

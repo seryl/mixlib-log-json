@@ -1,7 +1,7 @@
 mixlib-log-json
 ===============
 
-A JSON formatter for mixlib-log
+A JSON formatter for mixlib-log for better ingestion to services like [Logstash](http://logstash.net/)
 
 Ex:
 

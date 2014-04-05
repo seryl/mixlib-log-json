@@ -21,7 +21,7 @@ Jeweler::Tasks.new do |gem|
   gem.description = %Q{A general JSON logger for mixlib}
   gem.email = "joshtoft@gmail.com"
   gem.authors = ["Josh Toft"]
-  gem.version = '0.0.2'
+  gem.version = '0.0.3'
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new

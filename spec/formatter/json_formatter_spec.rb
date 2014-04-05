@@ -1,7 +1,6 @@
 $:.unshift File.dirname(__FILE__)
 require "spec_helper"
 require 'time'
-require 'yajl'
 
 describe Mixlib::Log::JSONFormatter do
   before(:each) do

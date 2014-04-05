@@ -1,6 +1,6 @@
 require 'mixlib/log/formatter'
 require 'time'
-require 'yajl'
+require 'multi_json'
 
 module Mixlib
   module Log
@@ -12,7 +12,7 @@ module Mixlib
           jsonmsg[:t] = time.iso8601()
         end
 
-        sprintf("%s\n", ::Yajl::Encoder.encode(jsonmsg.merge(msg2hash(msg))))
+        sprintf("%s\n", MultiJson.dump(jsonmsg.merge(msg2hash(msg))))
       end
 
       def msg2hash(msg)

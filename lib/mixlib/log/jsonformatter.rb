@@ -9,7 +9,7 @@ module Mixlib
       def call(severity, time, progname, msg)
         jsonmsg = { s: severity.downcase }
         if @@show_time
-          jsonmsg[:time] = time.iso8601()
+          jsonmsg[:t] = time.iso8601()
         end
 
         sprintf("%s\n", ::Yajl::Encoder.encode(jsonmsg.merge(msg2hash(msg))))

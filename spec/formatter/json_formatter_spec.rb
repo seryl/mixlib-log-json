@@ -19,7 +19,7 @@ describe Mixlib::Log::JSONFormatter do
     Mixlib::Log::JSONFormatter.show_time = true
     time = Time.new
     iso8601 = time.iso8601()
-    teststr = "{\"s\":\"monkey\",\"time\":\"#{iso8601}\",\"m\":\"mos def\"}\n"
+    teststr = "{\"s\":\"monkey\",\"t\":\"#{iso8601}\",\"m\":\"mos def\"}\n"
     @formatter.call("monkey", time, "test", "mos def").should == teststr
   end
 

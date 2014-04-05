@@ -2,3 +2,4 @@
 .bundle
 Gemfile.lock
 /mixlib-log-json.gemspec
+/mixlib-log-json-*.gem
